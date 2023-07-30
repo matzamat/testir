@@ -24,26 +24,31 @@ void MainWindow::on_verticalSlider_valueChanged(int value)
 
 void MainWindow::on_pushButton_clicked()
 {
+    // Обработчик нажатия на кнопку
     ui->textBrowser->setText("Клик по кнопке btnName");
 }
 
 void MainWindow::on_radioButton_clicked()
 {
+    // Обработчик нажатия на radioItem 1 из radioName
     ui->textBrowser->setText("выбран элемент radioItem 1 из radioName");
 }
 
 void MainWindow::on_radioButton_3_clicked()
 {
+    // Обработчик нажатия на radioItem 3 из radioName
     ui->textBrowser->setText("выбран элемент radioItem 3 из radioName");
 }
 
 void MainWindow::on_radioButton_2_clicked()
 {
+    // Обработчик нажатия на radioItem 2 из radioName
     ui->textBrowser->setText("выбран элемент radioItem 2 из radioName");
 }
 
 void MainWindow::on_comboBox_activated(int index)
 {
+    // Обработчик выбора элемента из списка
     if(index==0){
         ui->textBrowser->setText("выбран элемент listName из списка listName");
     } else if(index==1){
