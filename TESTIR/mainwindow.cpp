@@ -6,13 +6,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QObject::connect(ui->radioButton, SIGNAL(clicked(bool)), this, SLOT(radio1click()));
-    QObject::connect(ui->radioButton_2, SIGNAL(clicked(bool)), this, SLOT(radio2click()));
-    QObject::connect(ui->radioButton_3, SIGNAL(clicked(bool)), this, SLOT(radio3click()));
-    QObject::connect(ui->pushButton, SIGNAL(clicked(bool)), this, SLOT(buttonclick()));
+    QObject::connect(ui->radioButton, SIGNAL(clicked()), this, SLOT(radio1click()));
+    QObject::connect(ui->radioButton_2, SIGNAL(clicked()), this, SLOT(radio2click()));
+    QObject::connect(ui->radioButton_3, SIGNAL(clicked()), this, SLOT(radio3click()));
+    QObject::connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(buttonclick()));
     QObject::connect(ui->verticalSlider, SIGNAL(valueChanged(int)), this, SLOT(SliderChanged(int)));
     QObject::connect(ui->comboBox, SIGNAL(activated(int)), this, SLOT(comboBox(int)));
-
 }
 
 MainWindow::~MainWindow(){
