@@ -16,17 +16,17 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_verticalSlider_valueChanged(int value);
+    void SliderChanged(int value);
 
-    void on_pushButton_clicked();
+    void buttonclick();
 
-    void on_radioButton_clicked();
+    void radio1click();
 
-    void on_radioButton_3_clicked();
+    void radio2click();
 
-    void on_radioButton_2_clicked();
+    void radio3click();
 
-    void on_comboBox_activated(int index);
+    void comboBox(int index);
 
 private:
     Ui::MainWindow *ui;
